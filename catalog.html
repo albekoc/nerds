@@ -39,46 +39,60 @@
   <main>
     <div class="filter-block">
       <form class="filter" action="index.html" method="get">
-        <div class="filter-cost">
-          <b>Стоимость:</b><br>
-          <input type="range" name="cost-range" value="70" min="0" max="100"><br>
-          <label>От:
+        <h2>Стоимость:</h2>
+        <input type="range" name="cost-range" value="70" min="0" max="100"><br>
+        <label>От:
             <input type="number" name="cost-min" value="0">
           </label>
-          <label>До:
+        <label>До:
             <input type="number" name="cost-max" value="15000">
           </label>
-        </div>
-        <div class="filter-grid">
-          <b>Сетка:</b><br>
-          <label>
-            <input type="radio" name="grid" value="adaptive"> Адаптивная<br>
-          </label>
-          <label>
-            <input type="radio" name="grid" value="fixed"> Фиксированная<br>
-          </label>
-          <label>
-            <input type="radio" name="grid" value="auto-wide"> Резиновая
-          </label>
-        </div>
-        <div class="filter-features">
-          <b>Особенности:</b><br>
-          <label>
-            <input type="checkbox" name="slider" checked> Слайдер<br>
-          </label>
-          <label>
-            <input type="checkbox" name="advantages-block"> Блок преимуществ<br>
-          </label>
-          <label>
-            <input type="checkbox" name="news" checked> Новости<br>
-          </label>
-          <label>
-            <input type="checkbox" name="gallery"> Галерея<br>
-          </label>
-          <label>
-            <input type="checkbox" name="cart"> Корзина
-          </label>
-        </div>
+        <h2>Сетка:</h2>
+        <ul>
+          <li>
+            <label>
+                <input type="radio" name="grid" value="adaptive"> Адаптивная
+              </label>
+          </li>
+          <li>
+            <label>
+                <input type="radio" name="grid" value="fixed"> Фиксированная
+              </label>
+          </li>
+          <li>
+            <label>
+                <input type="radio" name="grid" value="auto-wide"> Резиновая
+              </label>
+          </li>
+        </ul>
+        <h2>Особенности:</h2>
+        <ul>
+          <li>
+            <label>
+                <input type="checkbox" name="slider" checked> Слайдер<br>
+            </label>
+          </li>
+          <li>
+            <label>
+                <input type="checkbox" name="advantages-block"> Блок преимуществ<br>
+            </label>
+          </li>
+          <li>
+            <label>
+                <input type="checkbox" name="news" checked> Новости<br>
+            </label>
+          </li>
+          <li>
+            <label>
+                <input type="checkbox" name="gallery"> Галерея<br>
+            </label>
+          </li>
+          <li>
+            <label>
+                <input type="checkbox" name="cart"> Корзина
+            </label>
+          </li>
+        </ul>
         <button type="submit" class="btn">Показать</button>
       </form>
     </div>
@@ -96,8 +110,6 @@
             <a href="#">По названию</a>
           </li>
         </ul>
-        <a href="#">Z-A</a>
-        <a href="#">A-Z</a>
       </div>
       <div class="templates">
         <div class="templates-item">
@@ -164,7 +176,7 @@
       <div class="paginator">
         <ul>
           <li>
-            <a href="#">1</a>
+            <a href="#" class="active-page">1</a>
           </li>
           <li>
             <a href="#">2</a>
